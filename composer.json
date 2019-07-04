@@ -1,6 +1,27 @@
 {
-	"name": "dxy990/test",
-    "require": {
-        
+  "name": "du2019/bchain",
+  "type": "library",
+  "description": "a block chain",
+  "keywords": ["dadu", "2019"],
+  "homepage": "https://github.com/duxiangyang990/qukuanlian",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/duxiangyang990/qukuanlian/issues"
+  },
+  "authors": [
+    {
+      "name": "duxiangyang",
+      "email": "dxyangemail@163.com",
+      "homepage": "https://github.com/duxiangyang990/"
     }
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8"
+  },
+  "autoload": {
+    "psr-4": {"Bchain\\": "src/"}
+  }
 }
