@@ -4,9 +4,19 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "guzzlehttp/guzzle": "5.3"
+        "guzzlehttp/guzzle": "^6.3@dev"
     },
-
+    "autoload": {
+        "classmap": [
+            "vendor/guzzlehttp/guzzle",
+            "vendor/simplito/elliptic-php",
+            "vendor/du2019/bchain/src/Ethereum/Client.php",
+            "vendor/du2019/bchain/src/BitCoin/Client.php",
+            "vendor/du2019/bchain/src/Tools"
+        ],
+        "psr-4": {},
+        "files": []
+    },
     "authors": [
         {
             "name": "Xiangyang Du",

@@ -2,9 +2,7 @@
 
 /**
  * This file is part of rlp package.
- *
  * (c) Kuan-Cheng,Lai <alk03073135@gmail.com>
- *
  * @author Peter Lai <alk03073135@gmail.com>
  * @license MIT
  */
@@ -16,7 +14,6 @@ class Rlp
 {
     /**
      * encode
-     *
      * @param mixed $inputs array of string
      * @return \Web3p\RLP\Buffer
      */
@@ -25,7 +22,6 @@ class Rlp
         if (is_array($inputs)) {
             $output = new Buffer;
             $result = new Buffer;
-
             foreach ($inputs as $input) {
                 $output->concat($this->encode($input));
             }
@@ -34,7 +30,6 @@ class Rlp
         $output = new Buffer;
         $input = $this->toBuffer($inputs);
         $length = $input->length();
-
         if ($length === 1 && $input[0] < 128) {
             return $input;
         } else {

@@ -2,9 +2,7 @@
 
 /**
  * This file is part of rlp package.
- *
  * (c) Kuan-Cheng,Lai <alk03073135@gmail.com>
- *
  * @author Peter Lai <alk03073135@gmail.com>
  * @license MIT
  */
@@ -16,21 +14,18 @@ class Buffer implements ArrayAccess
 {
     /**
      * data
-     *
      * @var array
      */
     protected $data = [];
 
     /**
      * encoding
-     *
      * @var string
      */
     protected $encoding = '';
 
     /**
      * construct
-     *
      * @param mixed $data
      * @param string $encoding the data encoding
      * @return void
@@ -46,7 +41,6 @@ class Buffer implements ArrayAccess
 
     /**
      * offsetSet
-     *
      * @param mixed $offset
      * @param mixed $value
      * @return void
@@ -62,7 +56,6 @@ class Buffer implements ArrayAccess
 
     /**
      * offsetExists
-     *
      * @param mixed $offset
      * @return bool
      */
@@ -73,7 +66,6 @@ class Buffer implements ArrayAccess
 
     /**
      * offsetUnset
-     *
      * @param mixed $offset
      * @return void
      */
@@ -84,7 +76,6 @@ class Buffer implements ArrayAccess
 
     /**
      * offsetGet
-     *
      * @param mixed $offset
      * @return mixed
      */
@@ -95,7 +86,6 @@ class Buffer implements ArrayAccess
 
     /**
      * toString
-     *
      * @param string $encoding
      * @return string
      */
@@ -141,7 +131,6 @@ class Buffer implements ArrayAccess
 
     /**
      * length
-     *
      * @return int
      */
     public function length()
@@ -151,7 +140,6 @@ class Buffer implements ArrayAccess
 
     /**
      * concat
-     *
      * @param mixed $inputs
      * @return \RLP\Buffer
      */
@@ -178,7 +166,6 @@ class Buffer implements ArrayAccess
 
     /**
      * slice
-     *
      * @param int $start
      * @param mixed $end
      * @return \RLP\Buffer
@@ -199,7 +186,6 @@ class Buffer implements ArrayAccess
 
     /**
      * decodeToData
-     *
      * @param mixed $input
      * @return array
      */
@@ -221,7 +207,6 @@ class Buffer implements ArrayAccess
 
     /**
      * arrayToData
-     *
      * @param array $inputs
      * @return array
      */
@@ -245,7 +230,6 @@ class Buffer implements ArrayAccess
 
     /**
      * stringToData
-     *
      * @param string $input
      * @param string $encoding
      * @return array
@@ -286,7 +270,6 @@ class Buffer implements ArrayAccess
 
     /**
      * numericToData
-     *
      * @param mixed $intput
      * @return array
      */
@@ -299,7 +282,6 @@ class Buffer implements ArrayAccess
 
     /**
      * intToData
-     *
      * @param mixed $intput
      * @return array
      */
